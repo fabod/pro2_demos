@@ -10,6 +10,7 @@ def hello():
     if request.method == 'POST':
         ziel_person = request.form['vorname']
         rueckgabe_string = "Hello " + ziel_person + "!"
+
         return rueckgabe_string
 
     return render_template("index.html")

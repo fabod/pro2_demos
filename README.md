@@ -23,3 +23,13 @@
 [10_Persistente_Daten](https://github.com/fabod/pro2/tree/master/demo_snippets/10_Persistente_Daten)
 
 [11_Datenvisualisierung](https://github.com/fabod/pro2/tree/master/demo_snippets/11_Datenvisualisierung)
+
+[12_Persistente Daten 2](https://github.com/fabod/pro2/tree/master/demo_snippets/21_Persistente_Daten_2)
+
+[13_Klassen](https://github.com/fabod/pro2/tree/master/demo_snippets/13_Klassen)
+
+[14_Pandas](https://github.com/fabod/pro2/tree/master/demo_snippets/14_Pandas)
+
+
+##Taschenrechner
+[Taschenrechner](https://github.com/fabod/pro2/tree/master/taschenrechner)

@@ -9,7 +9,7 @@ app = Flask("Daten")
 def speichern(aktivitaet):
     zeitpunkt, aktivitaet = daten.aktivitaet_speichern(aktivitaet)
 
-    return "Gespeichert: " + "etwas" + " um " + str("jetzt")
+    return "Gespeichert: " + aktivitaet + " um " + str(zeitpunkt)
 
 
 @app.route("/liste")

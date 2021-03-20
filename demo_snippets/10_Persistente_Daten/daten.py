@@ -14,7 +14,7 @@ def speichern(datei, key, value):
     # print(datei_inhalt)
 
     with open(datei, "w") as open_file:
-        json.dump(datei_inhalt, open_file)
+        json.dump(datei_inhalt, open_file, indent=4)
 
 
 def aktivitaet_speichern(aktivitaet):
