@@ -31,5 +31,5 @@
 [14_Pandas](https://github.com/fabod/pro2/tree/master/demo_snippets/14_Pandas)
 
 
-## Taschenrechner
+## Taschenrechnerübung von den Folien
 [Taschenrechner](https://github.com/fabod/pro2/tree/master/taschenrechner)
