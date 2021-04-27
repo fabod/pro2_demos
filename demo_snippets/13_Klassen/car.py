@@ -2,7 +2,8 @@ class Car:
     def __init__(self, colour, seats):
         self.colour = colour
         self.seats = seats
-        self.message = "Brumm brumm I am a car."
+        self.message = f"Brumm brumm I am a {self.colour} car."
+        self.get_message()
 
     def get_colour(self):
         print(f"The car's colour is {self.colour}")
@@ -17,6 +18,6 @@ class Car:
         if passengers > self.seats:
             print("There are not enough seats in the car")
         else:
-            self.seats -= passengers
+            self.seats = self.seats - passengers
 
         self.get_free_seats()

@@ -9,9 +9,9 @@ app = Flask("templates")
 def hello():
     if request.method == 'POST':
         ziel_person = request.form['vorname']
-        rueckgabe_string = "Hello " + ziel_person + "!"
+        rueckgabe_string = "<li> " + ziel_person + "</li>"
 
-        return rueckgabe_string
+        return render_template("begruessung.html", ansprechperson=rueckgabe_string)
 
     return render_template("index.html")
 

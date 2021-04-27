@@ -13,3 +13,7 @@ def main(csv_kopf, csv_ohne_kopf):
     data2 = pd.read_csv(csv_ohne_kopf, sep=';', names=['Frucht', 'Preis'])
     df2 = pd.DataFrame(data2)
     print(df2)
+
+
+if __name__ == "__main__":
+    main()

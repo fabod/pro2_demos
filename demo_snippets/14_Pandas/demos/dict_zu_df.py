@@ -9,3 +9,8 @@ def main():
 
     df = pd.DataFrame(fruit_dict)
     print(df)
+
+
+
+if __name__ == "__main__":
+    main()

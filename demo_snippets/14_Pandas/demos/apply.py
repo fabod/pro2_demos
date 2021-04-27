@@ -2,8 +2,10 @@ import pandas as pd
 
 
 def bewerten(num):
-    if num < 2:
+    if num <= 1.5:
         return "Billig"
+    elif num >= 3:
+        return "Teuer"
     else:
         return "Normal"
 
