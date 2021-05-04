@@ -18,14 +18,14 @@ def speichern(datei, key, value):
 
 
 def aktivitaet_speichern(aktivitaet):
-    datei_name = "aktivitaeten.json"
+    datei_name = "aktivitaeten_2.json"
     zeitpunkt = datetime.now()
     speichern(datei_name, zeitpunkt, aktivitaet)
     return zeitpunkt, aktivitaet
 
 
 def aktivitaeten_laden():
-    datei_name = "aktivitaeten.json"
+    datei_name = "aktivitaeten_2.json"
 
     try:
         with open(datei_name) as open_file:

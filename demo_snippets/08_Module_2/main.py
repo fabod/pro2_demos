@@ -1,14 +1,22 @@
 from flask import Flask
-from preise import rabatt_berechnen
-
+import preise
+import gutscheine
 app = Flask("module")
 
 
-@app.route("/<preis>")
+@app.route("/rabatt/<preis>")
 def rabatt(preis):
-    preis_mit_rabatt = rabatt_berechnen(int(preis))
+    preis_mit_rabatt = preise.rabatt(preis)
 
     return "Der neue Preis ist: " + str(preis_mit_rabatt)
+
+
+@app.route("/gutschein/<preis>/<gutschein>")
+def gutschein(preis, gutschein):
+    gutscheine = "sdfkj"
+    preis_mit_rabatt = gutscheine.rabatt(preis, gutschein)
+
+    return "Der neue Preis mit Gutschein ist: " + str(preis_mit_rabatt)
 
 
 if __name__ == '__main__':

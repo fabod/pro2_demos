@@ -1,12 +1,11 @@
 from flask import Flask
-from preise import rabatt_berechnen
-
+import preise
 app = Flask("module")
 
 
 @app.route("/<preis>")
 def rabatt(preis):
-    preis_mit_rabatt = rabatt_berechnen(preis)
+    preis_mit_rabatt = preise.rabatt_berechnen(preis)
 
     return "Der neue Preis ist: " + str(preis_mit_rabatt)
 

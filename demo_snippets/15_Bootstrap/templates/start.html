@@ -1,0 +1,20 @@
+{% include "header.html" %}
+<div class="container">
+    {% if name %}
+    <h1>Hello {{ name }}!</h1>
+    {% else %}
+    <h1>Hello stranger!</h1>
+    {% endif %}
+
+    <div class="row">
+        {% for card in cards %}
+        <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{card['titel']}}</h5>
+                <p class="card-text">{{ card['inhalt'] }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% include "footer.html" %}
